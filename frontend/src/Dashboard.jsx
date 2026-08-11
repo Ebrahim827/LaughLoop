@@ -4,7 +4,7 @@ import "./style.css";
 
 function Dashboard() {
 
-    const API = "http://laughloop.local:8000";
+    const API = "/api";
 
     const [joke, setJoke] = useState(null);
     const [showAnswer, setShowAnswer] = useState(false);

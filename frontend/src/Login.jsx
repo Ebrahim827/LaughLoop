@@ -10,7 +10,7 @@ function Login({ setLoggedIn }) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const API = "http://laughloop.local:8000";
+  const API = "/api";
 
   const login = async (e) => {
   e.preventDefault();
