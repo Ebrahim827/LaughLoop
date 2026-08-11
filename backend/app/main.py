@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes.auth import router as auth_router
-from app.routes.jokes import router as jokes_router
-from app.routes.interactions import router as interactions_router
-from app.routes.recommendations import router as recommendation_router
-from app.routes.explanation import router as explanation_router
-from app.routes.preferences import router as preferences_router
+app.include_router(auth_router, prefix="/api")
+app.include_router(jokes_router, prefix="/api")
+app.include_router(interactions_router, prefix="/api")
+app.include_router(recommendation_router, prefix="/api")
+app.include_router(explanation_router, prefix="/api")
+app.include_router(preferences_router, prefix="/api")
 
 app = FastAPI(
     title="HumourAI API",
