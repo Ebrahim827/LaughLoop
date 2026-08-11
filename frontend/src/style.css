@@ -1,0 +1,702 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+
+body{
+background:#FFE6C9;
+}
+
+.login-page{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#FFE6C9;
+}
+
+.card{
+width:420px;
+background:white;
+padding:30px;
+border-radius:24px;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.card h2{
+font-size:32px;
+margin-bottom:15px;
+color:#222;
+}
+
+.card p{
+color:#777;
+margin-bottom:10px;
+}
+
+.google-btn{
+width:100%;
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
+background:rgba(210, 208, 53, 0.787);
+cursor:pointer;
+margin-bottom:2px;
+font-weight:600;
+}
+
+.divider{
+text-align:center;
+margin:2px 0;
+color:#888;
+}
+
+.input-group{
+margin-bottom:1px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:2px;
+font-size:14px;
+font-weight:600;
+}
+
+.input-group input{
+width:100%;
+padding:10px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:15px;
+}
+
+.login-btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+background:#7A315C;
+color:white;
+font-size:17px;
+font-weight:700;
+cursor:pointer;
+margin-top:10px;
+}
+
+.bottom-text{
+margin-top:5px;
+text-align:center;
+}
+
+.bottom-text span{
+color:#7A315C;
+font-weight:700;
+cursor:pointer;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+    min-height:100vh;
+    background:#FFE6C9;
+}
+
+.navbar{
+    height:75px;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 50px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.navbar h2{
+    color:#0d4f34;
+    font-size:60px;
+    font-family:'Pacifico', cursive;
+    font-weight:600;
+
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    position:absolute;
+    right:60px;
+}
+
+.logout-btn{
+    padding:10px 20px;
+    border:none;
+    background:#841924;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.dashboard-container{
+    max-width:1300px;
+    margin:auto;
+    padding:40px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.joke-card,
+.recommend-box,
+.profile-box{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.joke-card h1{
+    margin-bottom:40px;
+    margin-top:2px;
+}
+
+.joke-card h3{
+    margin-bottom:15px;
+}
+
+.joke-card p{
+    font-size:18px;
+    line-height:30px;
+}
+
+.rating{
+    font-size:28px;
+    margin:25px 0;
+}
+
+.actions{
+    display:flex;
+    gap:15px;
+    margin-top:-45px;
+    align-items:center;
+}
+
+.reaction-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    font-size:24px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.2s;
+}
+
+.reaction-btn:hover{
+    transform:scale(1.1);
+    background:#FFF6ED;
+}
+
+.explain-btn{
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#201376;
+    color:white;
+    cursor:pointer;
+}
+
+.next-btn{
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#13766e;
+    color:white;
+    cursor:pointer;
+}
+
+.explanation{
+    margin-top:25px;
+    background:#FFF6ED;
+    padding:20px;
+    border-radius:12px;
+    line-height:28px;
+}
+
+.profile-box{
+    margin-top:25px;
+}
+
+.profile-box p{
+    margin-top:18px;
+    font-weight:600;
+}
+
+.question-box{
+    background:#FFF8F0;
+    border-radius:18px;
+    padding:25px;
+    margin:25px 0 18px;
+    border:2px solid #FFD7A5;
+}
+
+.question-box h3{
+    color:#7A315C;
+    margin-bottom:5px;
+    font-weight:900;
+}
+
+.question-box p{
+    font-size:22px;
+    font-weight:600;
+    line-height:30px;
+}
+
+.answer-box{
+    background:#7A315C;
+    color:white;
+    border-radius:18px;
+    padding:28px;
+    cursor:pointer;
+    text-align:center;
+    transition:.45s;
+    user-select:none;
+}
+
+.answer-box:hover{
+    transform:scale(1.02);
+}
+
+.answer-box.show{
+    background:#d0e516;
+    color:#222;
+}
+
+.answer-box h3{
+    margin-bottom:15px;
+    font-weight:900;
+}
+
+.answer-box p{
+    font-size:20px;
+    line-height:25px;
+}
+
+.preference{
+    margin:18px 0;
+}
+
+.preference span{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#E8E8E8;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:#7A315C;
+    border-radius:10px;
+    transition:width .4s;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 70vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+.saved-list {
+    margin-top: 20px;
+}
+
+.saved-joke-item {
+    background: #FFF3E0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.saved-question {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.saved-answer {
+    color: #666;
+}
+
+.remove-btn{
+
+margin-top:10px;
+
+padding:8px 16px;
+
+border:none;
+
+border-radius:10px;
+
+background:#d9534f;
+
+color:white;
+
+cursor:pointer;
+
+font-weight:600;
+
+transition:.2s;
+
+}
+
+.remove-btn:hover{
+
+background:#c9302c;
+
+transform:scale(1.05);
+
+}
+
+.nav-user{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.theme-btn{
+background:#031a0f;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.theme-btn:hover{
+transform:scale(1.05);
+}
+
+/* ==========================================
+            DARK THEME
+========================================== */
+
+body.dark{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+/* Dashboard */
+
+body.dark .dashboard{
+    background:#111827;
+}
+
+/* Navbar */
+
+body.dark .navbar{
+    background:#0F172A;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    box-shadow:none;
+}
+
+body.dark .navbar h2{
+    color:#32cee6;
+}
+
+/* Cards */
+
+body.dark .joke-card,
+body.dark .recommend-box,
+body.dark .profile-box,
+body.dark .modal-box{
+
+    background:#1E293B;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.35);
+
+    color:#F8FAFC;
+
+}
+
+/* Headings */
+
+body.dark h1{
+    color:white;
+}
+
+body.dark h2{
+    color:white;
+}
+
+body.dark h3{
+    color:#E879F9;
+}
+
+body.dark p,
+body.dark span{
+    color:#E2E8F0;
+}
+
+/* Question */
+
+body.dark .question-box{
+
+    background:#273449;
+
+    border:2px solid #46556D;
+
+}
+
+body.dark .question-box p{
+
+    color:white;
+
+}
+
+/* Reveal Card */
+
+body.dark .answer-box{
+
+    background:
+    linear-gradient(
+    135deg,
+    #6D28D9,
+    #4C1D95
+    );
+
+    color:white;
+
+}
+
+body.dark .answer-box.show{
+
+    background:
+    linear-gradient(
+    135deg,
+    #067c2c,
+    #2b5f04
+    );
+
+    color:#111827;
+
+}
+
+/* Explanation */
+
+body.dark .explanation{
+
+    background:#273449;
+
+    color:#F8FAFC;
+
+}
+
+/* Buttons */
+
+body.dark .next-btn{
+    background:#0EA5E9;  /* Sky blue */
+    color:white;
+}
+
+body.dark .logout-btn{
+    background:#DC2626;  /* Red - makes sense for logout/exit */
+    color:white;
+}
+
+body.dark .explain-btn{
+    background:#F59E0B;  /* Amber/gold - matches "lightbulb" explain icon */
+    color:white;
+}
+
+body.dark .next-btn:hover,
+body.dark .logout-btn:hover,
+body.dark .explain-btn:hover{
+
+    background:#8B5CF6;
+
+}
+
+/* Theme Button */
+
+body.dark .theme-btn{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+body.dark .theme-btn:hover{
+
+    background:#F3F4F6;
+
+}
+
+/* Inputs */
+
+body.dark input{
+
+    background:#273449;
+
+    color:white;
+
+    border:1px solid #46556D;
+
+}
+
+body.dark input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+/* Reaction Buttons */
+
+body.dark .reaction-btn{
+
+    background:#273449;
+
+    color:white;
+
+}
+
+body.dark .reaction-btn:hover{
+
+    background:#334155;
+
+}
+
+/* Preference Bars */
+
+body.dark .bar{
+
+    background:#374151;
+
+}
+
+body.dark .fill{
+
+    background:
+    linear-gradient(
+    90deg,
+    #8B5CF6,
+    #C084FC
+    );
+
+}
+
+/* Saved Jokes */
+
+body.dark .saved-joke-item{
+
+    background:#273449;
+
+    border-left:5px solid #A855F7;
+
+}
+
+body.dark .saved-question{
+
+    color:white;
+
+}
+
+body.dark .saved-answer{
+
+    color:#CBD5E1;
+
+}
+
+/* Remove Button */
+
+body.dark .remove-btn{
+
+    background:#DC2626;
+
+    color:white;
+
+}
+
+body.dark .remove-btn:hover{
+
+    background:#EF4444;
+
+}
+
+/* Close */
+
+body.dark .close-btn{
+
+    color:white;
+
+}
+
+/* Modal Overlay */
+
+body.dark .modal-overlay{
+
+    background:rgba(0,0,0,.75);
+
+}
+
+body,
+.navbar,
+.joke-card,
+.recommend-box,
+.profile-box,
+.question-box,
+.answer-box,
+button,
+input,
+.modal-box{
+    transition: background .35s ease,
+                color .35s ease,
+                border-color .35s ease,
+                box-shadow .35s ease;
+}
