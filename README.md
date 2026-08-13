@@ -1,4 +1,4 @@
-# 😂 LaughLoop — Personalized Joke Recommender
+#  LaughLoop — Personalized Joke Recommender
 
 LaughLoop is a full-stack web application that learns an individual user's sense of humor from real interaction data and delivers increasingly personalized joke recommendations — built end-to-end as a solo project spanning dataset curation, ML-based content classification, backend API design, and cloud deployment.
 
