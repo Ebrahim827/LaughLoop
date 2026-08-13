@@ -37,7 +37,7 @@ def signup(user: UserCreate, db: Session = Depends(get_db)):
     new_user = User(
         username=user.username,
         email=user.email,
-        password_hash=hash_password(user.password)
+        password_hash=(user.password)
     )
 
     db.add(new_user)
@@ -59,10 +59,7 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
             detail="Invalid email or password"
         )
 
-    if not verify_password(
-        user.password,
-        db_user.password_hash
-    ):
+    if user.password != db_user.password_hash:
         raise HTTPException(
             status_code=401,
             detail="Invalid email or password"
